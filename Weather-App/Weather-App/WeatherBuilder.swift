@@ -29,26 +29,31 @@ extension  WeatherBuilder{
         
         weatherList.removeAll()
         
-        for i in 0...weathers {
+        guard let city  = records["city"]["name"].string else{
+            
+            return
+        }
+       
+        for i in 0...weathers - 1 {
+            
             
             let temp        = records["list"][i]["main"]["temp"].doubleValue
             let tempMin     = records["list"][i]["main"]["temp_min"].double
             let tempMax     = records["list"][i]["main"]["temp_max"].double
             let humidity    = records["list"][i]["main"]["humidity"].double
             let pressure    = records["list"][i]["main"]["pressure"].double
-            let name        = records["list"][i]["name"].string
-            let desc        = records["list"][i]["weather"][0]["description"].string
-            let icon        = records["list"][i]["weather"][0]["icon"].string
+            let desc        = records["list"][i]["weather"][0]["description"].string ?? ""
+            let icon        = records["list"][i]["weather"][0]["icon"].string ?? ""
             let clouds      = records["list"][i]["clouds"]["all"].double
             let windSpeed   = records["list"][i]["wind"]["speed"].double
             
             
             // Create a Weather struct to pass to the delegate.
             let weather = Weather(
-                cityName: name!,
+                cityName: city,
                 temp: temp,
-                description: desc!,
-                icon: icon!,
+                description: desc,
+                icon: icon  ,
                 clouds: clouds!,
                 tempMin: tempMin!,
                 tempMax: tempMax!,
