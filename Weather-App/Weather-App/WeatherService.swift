@@ -81,11 +81,9 @@ class WeatherService {
             // print("Weather status code:\(status)")
             if status == 200 {
                 // everything is ok get the weather data from the json data.
-                let weather = self.prepareFor(json: json)
-                DispatchQueue.main.async {
-                    
-                        self.delegate?.setWeather(weather: weather)
-                }
+                self.prepareFor(json: json)
+                
+
             
 
             
@@ -115,41 +113,25 @@ class WeatherService {
         task.resume()
     }
 
-    func prepareFor (json : JSON) -> Weather {
+    func prepareFor (json : JSON)  {
         
-        print(json)
-        let _ = json["coord"]["lon"].double
-        let _ = json["coord"]["lat"].double
+      //  print(json)
+      //  let _ = json["coord"]["lon"].double
+      //  let _ = json["coord"]["lat"].double
         
         let list = json["list"].arrayObject as! [[String:Any]]
         
-        let temp =  json["list"][0]["main"]["temp"].doubleValue
-        let tempMin = json["list"][0]["main"]["temp_min"].double
-        let tempMax = json["list"][0]["main"]["temp_max"].double
-        let humidity = json["list"][0]["main"]["humidity"].double
-        let pressure = json["list"][0]["main"]["pressure"].double
-        let name = json["list"][0]["name"].string
-        let desc = json["list"][0]["weather"][0]["description"].string
-        let icon = json["list"][0]["weather"][0]["icon"].string
-        let clouds = json["list"][0]["clouds"]["all"].double
-        let windSpeed = json["list"][0]["wind"]["speed"].double
-
-        
-        // Create a Weather struct to pass to the delegate.
-        let weather = Weather(
-            cityName: name!,
-            temp: temp,
-            description: desc!,
-            icon: icon!,
-            clouds: clouds!,
-            tempMin: tempMin!,
-            tempMax: tempMax!,
-            humidity: humidity!,
-            pressure: pressure!,
-            windSpeed: windSpeed!
-        )
-        
-        return weather
+        WeatherBuilder.sharedInstance.buildWeatherData(for: list.count, and: json, completionhandler:{ (cancled) in
+            
+            print("Download complete")
+            
+       //     DispatchQueue.main.async {
+                
+       //         self.delegate?.setWeather(weather: weather)
+       //     }
+            
+        })
     }
+    
 
 }

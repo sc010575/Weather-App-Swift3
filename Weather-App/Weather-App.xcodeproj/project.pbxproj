@@ -17,6 +17,8 @@
 		C547C1861E8ABE21005D6CE7 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1851E8ABE21005D6CE7 /* Weather.swift */; };
 		C547C1891E8AC135005D6CE7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1881E8AC135005D6CE7 /* StringExtension.swift */; };
 		C547C18C1E8ACBFE005D6CE7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C18B1E8ACBFE005D6CE7 /* SwiftyJSON.swift */; };
+		C547C18E1E8AF4DF005D6CE7 /* WeatherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C18D1E8AF4DF005D6CE7 /* WeatherBuilder.swift */; };
+		C547C1911E8AF98D005D6CE7 /* NotificationRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1901E8AF98D005D6CE7 /* NotificationRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		C547C1851E8ABE21005D6CE7 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		C547C1881E8AC135005D6CE7 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		C547C18B1E8ACBFE005D6CE7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		C547C18D1E8AF4DF005D6CE7 /* WeatherBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherBuilder.swift; sourceTree = "<group>"; };
+		C547C1901E8AF98D005D6CE7 /* NotificationRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		C547C15F1E8A9EB2005D6CE7 /* Weather-App */ = {
 			isa = PBXGroup;
 			children = (
+				C547C18F1E8AF97B005D6CE7 /* Notifications */,
 				C547C18A1E8ACBFE005D6CE7 /* JSONService */,
 				C547C1871E8AC096005D6CE7 /* Utilities */,
 				C547C1841E8ABE08005D6CE7 /* Model */,
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				C547C1821E8ABC77005D6CE7 /* WeatherService.swift */,
+				C547C18D1E8AF4DF005D6CE7 /* WeatherBuilder.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -146,6 +152,14 @@
 				C547C18B1E8ACBFE005D6CE7 /* SwiftyJSON.swift */,
 			);
 			path = JSONService;
+			sourceTree = "<group>";
+		};
+		C547C18F1E8AF97B005D6CE7 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				C547C1901E8AF98D005D6CE7 /* NotificationRepresentable.swift */,
+			);
+			name = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +270,9 @@
 				C547C1891E8AC135005D6CE7 /* StringExtension.swift in Sources */,
 				C547C18C1E8ACBFE005D6CE7 /* SwiftyJSON.swift in Sources */,
 				C547C1831E8ABC77005D6CE7 /* WeatherService.swift in Sources */,
+				C547C1911E8AF98D005D6CE7 /* NotificationRepresentable.swift in Sources */,
 				C547C1611E8A9EB2005D6CE7 /* AppDelegate.swift in Sources */,
+				C547C18E1E8AF4DF005D6CE7 /* WeatherBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

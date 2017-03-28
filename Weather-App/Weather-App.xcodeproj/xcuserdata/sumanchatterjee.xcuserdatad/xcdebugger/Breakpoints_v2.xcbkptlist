@@ -41,13 +41,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather-App/WeatherService.swift"
-            timestampString = "512420403.33564"
+            filePath = "Weather-App/WeatherBuilder.swift"
+            timestampString = "512425129.46511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "prepareFor(json:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "buildWeatherData(for:and:completionhandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather-App/WeatherBuilder.swift"
+            timestampString = "512425162.452148"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "buildWeatherData(for:and:completionhandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
