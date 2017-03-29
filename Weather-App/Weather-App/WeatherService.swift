@@ -11,26 +11,26 @@ import Foundation
 import UIKit
 
 protocol WeatherServiceDelegate {
-    func setWeather(weather: Weather)
+    func setWeather()
     func weatherErrorWithMessage(message: String)
 }
 
 
 class WeatherService {
-    // Set your appid
+    // Set  appid
     let appid: String
     var delegate: WeatherServiceDelegate?
     
-    /** Initial a WeatherService instance with your OpenWeatherMap app id. */
+    /** Initial a WeatherService instance with OpenWeatherMap app id. */
     init(appid: String) {
         self.appid = appid
     }
     
-    /** Formats an API call to the OpenWeatherMap service. Pass in a string in the form City Name, Country. */
+    /** Formats an API call to the OpenWeatherMap service. Pass in a string in the form City Name. */
     func getWeatherForCity(city: String) {
      //   if let cityEscaped = city.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet()) {
         
-            let path = "http://api.openweathermap.org/data/2.5/forecast?q=Staines,GB&mode=JSON&appid=\(appid)"
+            let path = "http://api.openweathermap.org/data/2.5/forecast?q=\(city),GB&mode=JSON&appid=\(appid)"
             
             getWeatherWithPath(path: path)
     }
@@ -62,7 +62,7 @@ class WeatherService {
             
             // Check for nil data
             let json = JSON(data: data!)
-            // print(json)
+            print(json)
             if json == nil {
                 return
             }
@@ -82,10 +82,6 @@ class WeatherService {
             if status == 200 {
                 // everything is ok get the weather data from the json data.
                 self.prepareFor(json: json)
-                
-
-            
-
             
             } else if status == 404 {
                 // City not found
@@ -125,10 +121,10 @@ class WeatherService {
             
             print("Download complete")
             
-       //     DispatchQueue.main.async {
+            DispatchQueue.main.async {
                 
-       //         self.delegate?.setWeather(weather: weather)
-       //     }
+                self.delegate?.setWeather()
+            }
             
         })
     }

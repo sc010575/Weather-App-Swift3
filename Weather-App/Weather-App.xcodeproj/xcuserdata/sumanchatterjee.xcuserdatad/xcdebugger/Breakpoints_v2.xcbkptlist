@@ -6,23 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-App/WeatherService.swift"
-            timestampString = "512413039.758184"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "getWeatherWithPath(path:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Weather-App/WeatherService.swift"
@@ -54,16 +38,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather-App/WeatherBuilder.swift"
-            timestampString = "512428177.669763"
+            filePath = "Weather-App/SlideAnimator.swift"
+            timestampString = "512466362.006826"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "buildWeatherData(for:and:completionhandler:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "slideInFromTop(duration:completionDelegate:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

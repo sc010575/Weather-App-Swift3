@@ -29,7 +29,6 @@ import Foundation
 
 struct Weather {
     
-    
     let cityName: String
     let temp: Double
     let description: String
