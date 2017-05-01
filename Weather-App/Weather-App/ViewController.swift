@@ -67,8 +67,6 @@ extension ViewController {
     func setWeather() {
         
         self.activityIndecator.stopAnimating()
-        print("I am here")
-        
         let weaterTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "WeaterTableViewController") as! WeaterTableViewController
         self.navigationController?.pushViewController(weaterTableViewController, animated: true)
     }

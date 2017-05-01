@@ -45,7 +45,6 @@ class WeaterTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let weatherinfo : Weather = weatherLists[indexPath.row]
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: WeatherTableViewCell.self), for: indexPath)
         
         guard let weatherTableViewCell = cell as? WeatherTableViewCell else {

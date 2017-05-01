@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C515E1DE1EB75E9800CE90E3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C515E1DD1EB75E9800CE90E3 /* SwiftyJSON.swift */; };
 		C547C1611E8A9EB2005D6CE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1601E8A9EB2005D6CE7 /* AppDelegate.swift */; };
 		C547C1631E8A9EB2005D6CE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1621E8A9EB2005D6CE7 /* ViewController.swift */; };
 		C547C1661E8A9EB2005D6CE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C547C1641E8A9EB2005D6CE7 /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		C547C1831E8ABC77005D6CE7 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1821E8ABC77005D6CE7 /* WeatherService.swift */; };
 		C547C1861E8ABE21005D6CE7 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1851E8ABE21005D6CE7 /* Weather.swift */; };
 		C547C1891E8AC135005D6CE7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1881E8AC135005D6CE7 /* StringExtension.swift */; };
-		C547C18C1E8ACBFE005D6CE7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C18B1E8ACBFE005D6CE7 /* SwiftyJSON.swift */; };
 		C547C18E1E8AF4DF005D6CE7 /* WeatherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C18D1E8AF4DF005D6CE7 /* WeatherBuilder.swift */; };
 		C547C1911E8AF98D005D6CE7 /* NotificationRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1901E8AF98D005D6CE7 /* NotificationRepresentable.swift */; };
 		C547C1931E8B8CC5005D6CE7 /* SlideAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547C1921E8B8CC5005D6CE7 /* SlideAnimator.swift */; };
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C515E1DD1EB75E9800CE90E3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../../../../TopMovies/TopMovies/JSONService/SwiftyJSON.swift; sourceTree = "<group>"; };
 		C547C15D1E8A9EB2005D6CE7 /* Weather-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C547C1601E8A9EB2005D6CE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C547C1621E8A9EB2005D6CE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		C547C1821E8ABC77005D6CE7 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		C547C1851E8ABE21005D6CE7 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		C547C1881E8AC135005D6CE7 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		C547C18B1E8ACBFE005D6CE7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		C547C18D1E8AF4DF005D6CE7 /* WeatherBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherBuilder.swift; sourceTree = "<group>"; };
 		C547C1901E8AF98D005D6CE7 /* NotificationRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRepresentable.swift; sourceTree = "<group>"; };
 		C547C1921E8B8CC5005D6CE7 /* SlideAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideAnimator.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		C547C18A1E8ACBFE005D6CE7 /* JSONService */ = {
 			isa = PBXGroup;
 			children = (
-				C547C18B1E8ACBFE005D6CE7 /* SwiftyJSON.swift */,
+				C515E1DD1EB75E9800CE90E3 /* SwiftyJSON.swift */,
 			);
 			path = JSONService;
 			sourceTree = "<group>";
@@ -297,9 +297,9 @@
 				C547C1861E8ABE21005D6CE7 /* Weather.swift in Sources */,
 				C547C1991E8BBF3F005D6CE7 /* WeaterTableViewController.swift in Sources */,
 				C547C19B1E8BC38B005D6CE7 /* WeatherTableViewCell.swift in Sources */,
+				C515E1DE1EB75E9800CE90E3 /* SwiftyJSON.swift in Sources */,
 				C547C1631E8A9EB2005D6CE7 /* ViewController.swift in Sources */,
 				C547C1891E8AC135005D6CE7 /* StringExtension.swift in Sources */,
-				C547C18C1E8ACBFE005D6CE7 /* SwiftyJSON.swift in Sources */,
 				C547C1931E8B8CC5005D6CE7 /* SlideAnimator.swift in Sources */,
 				C547C1831E8ABC77005D6CE7 /* WeatherService.swift in Sources */,
 				C547C1911E8AF98D005D6CE7 /* NotificationRepresentable.swift in Sources */,
@@ -508,6 +508,7 @@
 				C547C17C1E8A9EB2005D6CE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C547C17D1E8A9EB2005D6CE7 /* Build configuration list for PBXNativeTarget "Weather-AppTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +517,7 @@
 				C547C17F1E8A9EB2005D6CE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
